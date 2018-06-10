@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-quickstart-app",
+  "version": "0.1.0",
+  "description": "Start nodejs app development with ES2015+ quickly",
+  "author": "Ceyhun Keklik <ceyhunkeklik@hotmail.com> (https://github.com/ceyhunkeklik)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./npm-debug.log,./nodemon.json,./README.md --copy-files",
+    "start": "npm run build && node dist/index.js",
+    "dev": "./node_modules/nodemon/bin/nodemon.js --exec npm start"
+  },
+  "keywords": [
+    "node.js",
+    "application",
+    "quickstart",
+    "es2016",
+    "es2017"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "nodemon": "^1.17.5",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "moment": "^2.22.2",
+    "request": "^2.87.0"
+  }
+}
