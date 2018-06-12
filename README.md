@@ -11,7 +11,7 @@ Start Node.js application development using ES2015+ quickly.
 
  - [Babel](https://github.com/babel/babel) configurations are ready. You can use any ECMAScript version.
  - [Airbnb eslint rules](https://github.com/airbnb/javascript) was implemented and configured.
- - [Nodemon](https://github.com/remy/nodemon/) was configured for reloading authomatically for any changes.
+ - [Nodemon](https://github.com/remy/nodemon/) was configured for reloading automatically for any changes.
 
 ## Usage
 ```bash
